@@ -201,7 +201,7 @@ function play(player, psum, correction, num) {
 
 document.getElementById("diceBtn").addEventListener("click", function () {
     rollingSound.play()
-    num = Math.floor(Math.random() * (6 - 1 + 1) + 1)
+   num = [1, 2, 3, 4, 5, 6][Math.floor(Math.random() * 6)];
     document.getElementById("dice").innerText = num
 
 
